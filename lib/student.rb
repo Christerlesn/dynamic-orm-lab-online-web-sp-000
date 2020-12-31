@@ -13,7 +13,7 @@ class Student < InteractiveRecord
   end
 
   def self.column_names
-    ATTRIBUTES.each {|attribute_name| puts "attribute_name"}
+    #ATTRIBUTES.each {|attribute_name| puts "attribute_name"}
   end
 
 end
