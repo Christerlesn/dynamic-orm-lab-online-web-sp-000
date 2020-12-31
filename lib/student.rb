@@ -9,7 +9,6 @@ class Student < InteractiveRecord
   end
 
   def self.column_names
-    attr_accessor.each {|name| puts "name"}.join(",")
   end
 
 end
