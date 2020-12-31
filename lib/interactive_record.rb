@@ -33,7 +33,7 @@ class InteractiveRecord
 
   def col_names_for_insert
     binding.pry
-    self.class.column_names[1..-1]
+    self.class.column_names[1..-1].join(",")
   end
 
 end
