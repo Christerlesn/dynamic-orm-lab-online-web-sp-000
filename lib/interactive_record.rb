@@ -43,7 +43,7 @@ class InteractiveRecord
     values.join(", ")
   end
 
-  #binding.pry
+  binding.pry
   def save
     sql = <<-SQL
     INSERT INTO #{table_name_for_insert} (
