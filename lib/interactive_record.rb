@@ -24,7 +24,7 @@ class InteractiveRecord
     attr_accessor col_name.to_sym
   end
 
-  def initialize #(attributes={})
+  def initialize (attributes={})
     attributes.each do |attr_name, attr_value|
       self.send("#{attr_name}=", attr_value)
     end
