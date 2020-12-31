@@ -4,11 +4,7 @@ require 'interactive_record.rb'
 
 class Student < InteractiveRecord
   extend InteractiveRecord::ClassMethods
-  include InteractiveRecord::InstanceMethods
-
-  def self.table_name
-    "#{self.to_s.downcase.pluralize}"
-  end
+  #include InteractiveRecord::InstanceMethods
 
   def self.column_names
     DB[:conn].results_as_hash = true
