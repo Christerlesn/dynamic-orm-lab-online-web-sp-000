@@ -7,7 +7,4 @@ class InteractiveRecord
         "#{self.to_s.downcase.pluralize}"
       end
   end
-  module InstanceMethods
-
-  end
 end
