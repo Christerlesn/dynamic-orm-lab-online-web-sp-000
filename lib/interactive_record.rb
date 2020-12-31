@@ -2,12 +2,12 @@ require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
 class InteractiveRecord
-  class ClassMethods
+  module ClassMethods
       def table_name
         "#{self.to_s.downcase.pluralize}"
       end
   end
-  class InstanceMethods
+  module InstanceMethods
 
   end
 end
