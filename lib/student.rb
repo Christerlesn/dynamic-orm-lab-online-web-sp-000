@@ -3,7 +3,7 @@ require 'active_support/inflector'
 require 'interactive_record.rb'
 
 class Student < InteractiveRecord
-  extend InteractiveRecord::ClassMethods
+  #extend InteractiveRecord::ClassMethods
   #include InteractiveRecord::InstanceMethods
 
   def self.column_names
