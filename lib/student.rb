@@ -30,6 +30,4 @@ class Student < InteractiveRecord
     end
   end
 
-  def
-
 end
