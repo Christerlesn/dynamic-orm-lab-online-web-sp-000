@@ -12,7 +12,7 @@ class Student < InteractiveRecord
     "#{self.to_s.downcase.pluralize}"
   end
 
-  def self.column_names(attributes_array)
+  def self.column_names
     ATTRIBUTES.each {|attribute_name| puts "attribute_name"}
   end
 
