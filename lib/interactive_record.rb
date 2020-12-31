@@ -32,8 +32,8 @@ class InteractiveRecord
   end
 
   def col_names_for_insert
-    binding.pry
-    self.class.column_names.join()
+    #binding.pry
+    #self.class.column_names.join()
   end
 
 end
