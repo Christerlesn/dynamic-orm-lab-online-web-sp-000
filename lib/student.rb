@@ -3,6 +3,8 @@ require 'active_support/inflector'
 require 'interactive_record.rb'
 
 class Student < InteractiveRecord
+  extend InteractiveRecord::ClassMethods
+  include InteractiveRecord::InstanceMethods
 
   def self.table_name
     "#{self.to_s.downcase.pluralize}"
