@@ -3,17 +3,13 @@ require 'active_support/inflector'
 require 'interactive_record.rb'
 
 class Student < InteractiveRecord
-  # ATTRIBUTES = {
-  #   :id => INTEGER PRIMARY KEY,
-  #   :name => TEXT,
-  #   :grade => TEXT
-  # }
+
   def self.table_name
     "#{self.to_s.downcase.pluralize}"
   end
 
   def self.column_names
-    #ATTRIBUTES.each {|attribute_name| puts "attribute_name"}
+    attr_accessor.each {|name| puts "name"}.join(",")
   end
 
 end
